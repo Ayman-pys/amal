@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    background-color: rgb(255, 217, 0);
+    padding: 20px;
+    position: fixed;
+    bottom: 100;
+}
+.myp, .image h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.image h1{
+    color: white;
+    font-size: 40px;
+}
+.home, .about, .contact {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image, .content {
+    width: 45%;
+}
+
+.home .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.home ul li{
+    margin: 10px;
+    font-size: 19px;
+}
+.content h3 {
+    font-size: 32px;
+    margin: 20px
+}
+
+.home .content p {
+    font-size: 22px;
+    margin: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    font-size: 30px;
+    background-color: rgb(0, 0, 104);
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
+
+.btn i {
+    color: gold;
+    margin: 9px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .home .image, 
+    .home .content {
+        width: 95%;
+    }
+
+    .home .content h3 {
+        font-size: 28px;
+    }
+
+    .home .content p {
+        font-size: 20px;
+    }
+
+    .btn,.imge h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .content h3 {
+        font-size: 24px;
+    }
+
+    .home .content p {
+        font-size: 18px;
+    }
+
+    .btn,.imge h1 {
+        font-size: 22px;
+        padding: 15px;
+    }
+}
+
+.about {
+    background-image: url(bg5.jpg);
+    margin: 20px;
+    border: 20px solid gold;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.about .myh2 {
+    font-size: 25px;
+    margin: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: left;
+}
+
+.about ul li {
+    font-size: 28px;
+    margin: 20px;
+    margin-left: 30px;
+    color: white;
+}
+
+.about img {
+    margin: 20px;
+    width: 100%;
+    height: 490px;
+    padding: 20px;
+    margin-left: 50px;
+    border: 15px solid black;
+    color: white;
+}
+
+button {
+    font-size: 32px;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .image, .content {
+        width: 95%;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about .myh2 {
+        font-size: 22px;
+    }
+
+    .about ul li {
+        font-size: 24px;
+    }
+
+    .about img {
+        width: 95%;
+        height: auto;
+    }
+
+    button {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about .myh2 {
+        font-size: 20px;
+    }
+
+    .about ul li {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 24px;
+    }
+
+    .about img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+.contact {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(wp10959565.webp);
+    margin: 20px;
+    border: 20px solid gold;
+}
+
+.contact .maincpage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 10px black;
+}
+
+.contact .lcp, .rcp {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: auto;
+}
+
+.contact .lcp h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 70px 10px 0;
+}
+
+.contact .lcp li,
+.lcp b {
+    margin: 20px;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+}
+
+.lcp b {
+    margin-left: 30px;
+}
+
+.line {
+    width: 13px;
+    height: 80%;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.rcp h1 {
+    margin: 12px;
+    margin-top: 7px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.rcp h6 {
+    font-size: 1.5rem;
+    margin: 12px 0 0 22px;
+    color: white;
+}
+
+.rcp input {
+    font-size: 1.2rem;
+    padding: 3px;
+    color: black;
+    border: none;
+    margin-left: 32px;
+}
+
+input.check {
+    width: 29px;
+    height: 29px;
+}
+
+i {
+    color: white;
+    margin: 17px;
+    font-size: 1.8rem;
+}
+
+.rcp button {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact .lcp, .rcp {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact .lcp h1, 
+    .contact .lcp li, 
+    .rcp h1, 
+    .rcp h6, 
+    .rcp input, 
+    i, 
+    .rcp button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px;
+    }
+
+    .contact .lcp, .rcp {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact .lcp h1, 
+    .contact .lcp li, 
+    .rcp h1, 
+    .rcp h6, 
+    .rcp input, 
+    i, 
+    .rcp button {
+        font-size: 1.2rem;
+    }
+}
+.creatit{
+    margin-top: 30px;
+    width: 100%;
+    background-color: gold;
+    border-radius: 40px 40px 0px 0px;
+    padding: 20px;
+    text-align: center;
+}
+.creatit h1{
+    font-size: 40px;
+    margin: 20px;
+}
