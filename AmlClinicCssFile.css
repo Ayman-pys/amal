@@ -371,7 +371,7 @@ i {
     margin: 20px;
 }
 *{
-    animation:apper 5s linear;
+    animation:apper linear;
     animation-timline:view();
     animation-range:entry 0% cover 40%;
 }
